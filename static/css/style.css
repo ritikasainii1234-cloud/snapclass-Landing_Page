@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Climate+Crisis&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+:root {
+    --bg-main: #fcfcfd;
+    --primary: #5865F2;
+    --primary-dark: #4752C4;
+    --secondary: #EB459E;
+    --text-dark: #1e293b;
+    --text-muted: #64748b;
+    --border: #eef2f6;
+    --dot-color: #e5e7eb;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-dark);
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Climate Crisis', sans-serif;
+    line-height: 1.1;
+    word-wrap: break-word;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 80px;
+    background-color: #000000;
+    border-bottom: 1px solid #333333;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    height: 38px;
+    width: auto;
+}
+
+.logo-text {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 1.6rem;
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 0.8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.nav-links a:hover {
+    color: var(--primary);
+}
+
+.btn-pill {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 12px 32px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    white-space: nowrap;
+}
+
+.btn-pill:hover {
+    background-color: #f0f0f0;
+}
+
