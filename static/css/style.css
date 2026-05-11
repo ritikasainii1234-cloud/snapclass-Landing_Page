@@ -100,3 +100,111 @@ h4 {
     background-color: #f0f0f0;
 }
 
+
+.hero {
+    min-height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 120px 40px;
+    background-color: #f0f4ff;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    padding: 10px 20px;
+    border-radius: 100px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--primary);
+    margin-bottom: 32px;
+}
+
+.hero h1 {
+    font-size: 5rem;
+    color: var(--text-dark);
+    max-width: 1000px;
+    margin-bottom: 24px;
+    line-height: 1.0;
+}
+
+.hero h1 span {
+    color: var(--primary);
+}
+
+.hero p {
+    font-size: 1.25rem;
+    color: var(--text-muted);
+    max-width: 650px;
+    margin-bottom: 56px;
+    font-weight: 400;
+}
+
+.hero-actions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.btn-cta {
+    background-color: #000000;
+    color: white;
+    padding: 20px 48px;
+    border-radius: 100px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-cta:hover {
+    background-color: #333333;
+}
+
+.link-action {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.floating-card {
+    position: absolute;
+    width: 320px;
+    background-color: #ffffff;
+    padding: 14px;
+    border-radius: 36px;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.floating-card img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 24px;
+    background-color: #f8faff;
+}
+
+.card-label {
+    display: none;
+}
+
+.card-left {
+    left: 40px;
+    top: 50%;
+}
+
+.card-right {
+    right: 40px;
+    bottom: 15%;
+}
