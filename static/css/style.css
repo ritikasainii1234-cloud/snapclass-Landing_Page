@@ -208,3 +208,69 @@ h4 {
     right: 40px;
     bottom: 15%;
 }
+
+.main-footer {
+    padding: 100px 80px 40px;
+    background-color: #000000;
+    border-top: 1px solid #333333;
+    color: #ffffff;
+}
+
+.main-footer .footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 80px;
+    max-width: 1200px;
+    margin: 0 auto 80px;
+}
+
+.footer-brand .logo {
+    margin-bottom: 24px;
+}
+
+.footer-brand p {
+    color: #cccccc;
+    font-size: 1rem;
+    max-width: 320px;
+    line-height: 1.6;
+}
+
+.footer-brand .logo-text {
+    color: #ffffff;
+}
+
+.footer-links h4 {
+    font-size: 1.1rem;
+    color: #ffffff;
+    margin-bottom: 32px;
+    font-weight: 800;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links li {
+    margin-bottom: 16px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #cccccc;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.footer-bottom {
+    padding-top: 40px;
+    border-top: 1px solid #333333;
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #999999;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+
