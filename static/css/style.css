@@ -433,4 +433,64 @@ h4 {
     font-size: 0.9rem;
     font-weight: 500;
 }
+/* Teacher Flow Section */
+.teacher-flow {
+    padding: 120px 80px;
+}
+
+.flow-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.flow-step {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
+}
+
+.flow-content {
+    flex: 1;
+}
+
+.step-badge {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.flow-content h3 {
+    font-size: 3.2rem;
+    margin-bottom: 24px;
+}
+
+.flow-content p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.flow-image {
+    flex: 1.4;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.flow-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.flow-image:hover img {
+    transform: scale(1.02);
+}
 
