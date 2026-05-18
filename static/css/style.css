@@ -100,7 +100,7 @@ h4 {
     background-color: #f0f0f0;
 }
 
-/* Hero Section */
+
 .hero {
     min-height: 90vh;
     display: flex;
@@ -176,7 +176,6 @@ h4 {
     font-weight: 600;
 }
 
-/* Floating Cards Simplified */
 .floating-card {
     position: absolute;
     width: 320px;
@@ -210,27 +209,7 @@ h4 {
     bottom: 15%;
 }
 
-
-/* Integrated Logos */
-.integrated {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.integrated p {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-bottom: 20px;
-}
-
-.logo-strip {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Features Section */
+/* features */
 .features {
     padding: 120px 80px;
     background-color: white;
@@ -281,66 +260,6 @@ h4 {
     line-height: 1.6;
 }
 
-/* Teacher Flow Section */
-.teacher-flow {
-    padding: 120px 80px;
-}
-
-.flow-container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.flow-step {
-    display: flex;
-    align-items: center;
-    gap: 80px;
-    margin-bottom: 120px;
-}
-
-.flow-content {
-    flex: 1;
-}
-
-.step-badge {
-    color: var(--primary);
-    font-weight: 800;
-    font-size: 0.9rem;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    margin-bottom: 16px;
-    display: block;
-}
-
-.flow-content h3 {
-    font-size: 3.2rem;
-    margin-bottom: 24px;
-}
-
-.flow-content p {
-    font-size: 1.15rem;
-    color: var(--text-muted);
-    margin-bottom: 30px;
-}
-
-.flow-image {
-    flex: 1.4;
-    border-radius: 40px;
-    background-color: white;
-    border: 1px solid #e5e7eb;
-    overflow: hidden;
-}
-
-.flow-image img {
-    width: 100%;
-    height: auto;
-    display: block;
-    transition: transform 0.3s ease;
-}
-
-.flow-image:hover img {
-    transform: scale(1.02);
-}
 
 /* Tech Stack */
 .tech-stack {
@@ -419,7 +338,6 @@ h4 {
     margin-top: 10px;
 }
 
-/* Footer Section */
 .purple-section {
     background-color: var(--primary);
     color: white;
@@ -452,7 +370,6 @@ h4 {
     display: inline-block;
 }
 
-/* Main Footer */
 .main-footer {
     padding: 100px 80px 40px;
     background-color: #000000;
@@ -516,210 +433,64 @@ h4 {
     font-size: 0.9rem;
     font-weight: 500;
 }
-
-/* Mobile Responsiveness Improvements */
-
-@media (max-width: 1200px) {
-    .navbar {
-        padding: 12px 40px;
-    }
-
-    .hero h1 {
-        font-size: 4.5rem;
-    }
-
-    .floating-card {
-        display: none;
-    }
-
-    .features,
-    .teacher-flow,
-    .tech-stack,
-    .purple-section {
-        padding: 80px 40px;
-    }
+/* Teacher Flow Section */
+.teacher-flow {
+    padding: 120px 80px;
 }
 
-@media (max-width: 1024px) {
-    .hero h1 {
-        font-size: 3.5rem;
-    }
-
-    .tech-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .flow-step {
-        gap: 40px;
-        margin-bottom: 80px;
-    }
-
-    .flow-content h3 {
-        font-size: 2.2rem;
-    }
-
-    .tech-stack {
-        padding: 50px 20px;
-        border-radius: 40px;
-        margin: 20px;
-    }
-
-    .tech-stack h2 {
-        font-size: 2.4rem;
-    }
-
-    .tech-grid {
-        grid-template-columns: repeat(2, 1fr);
-        margin-top: 30px;
-    }
+.flow-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-@media (max-width: 768px) {
-    .navbar .logo-text {
-        display: none;
-    }
-
-    .navbar {
-        padding: 10px 20px;
-    }
-
-    .nav-links {
-        display: none;
-    }
-
-    .hero {
-        padding: 60px 20px;
-    }
-
-    .hero h1 {
-        font-size: 2.8rem;
-    }
-
-    .hero p {
-        font-size: 1rem;
-        margin-bottom: 32px;
-    }
-
-    .hero-actions {
-        flex-direction: column;
-        gap: 16px;
-    }
-
-    .btn-cta {
-        padding: 16px 32px;
-        width: 100%;
-        justify-content: center;
-    }
-
-    .features,
-    .teacher-flow {
-        padding: 80px 20px;
-    }
-
-    .features h2 {
-        font-size: 2.4rem;
-        margin-bottom: 40px;
-    }
-
-    .feature-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-
-    .feature-card {
-        padding: 30px 20px;
-        border-radius: 30px;
-    }
-
-    .flow-step {
-        flex-direction: column !important;
-        gap: 20px;
-        margin-bottom: 60px;
-    }
-
-    .flow-image {
-        width: 100%;
-        flex: none;
-        border-radius: 20px;
-    }
-
-    .flow-content h3 {
-        font-size: 1.8rem;
-        margin-bottom: 12px;
-    }
-
-    .flow-content p {
-        font-size: 1rem;
-        margin-bottom: 20px;
-    }
-
-    .tech-stack {
-        padding: 60px 20px;
-        margin: 20px;
-        border-radius: 40px;
-    }
-
-    .tech-stack h2 {
-        font-size: 2.4rem;
-    }
-
-    .tech-card {
-        padding: 20px;
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .t-icon {
-        margin: 0 auto;
-    }
-
-    .tech-tag {
-        position: relative;
-        top: 0;
-        right: 0;
-        margin-top: 10px;
-        display: inline-block;
-    }
-
-    .purple-section {
-        padding: 60px 20px;
-        margin: 20px;
-        border-radius: 40px;
-    }
-
-    .purple-section h2 {
-        font-size: 2rem;
-    }
-
-    .btn-white {
-        padding: 16px 32px;
-        width: 100%;
-    }
-
-    .main-footer {
-        padding: 60px 20px 30px;
-    }
-
-    .main-footer .footer-grid {
-        grid-template-columns: 1fr;
-        gap: 40px;
-        text-align: center;
-        margin-bottom: 40px;
-    }
-
-    .footer-brand p {
-        max-width: 100%;
-    }
+.flow-step {
+    display: flex;
+    align-items: center;
+    gap: 80px;
+    margin-bottom: 120px;
 }
 
-@media (max-width: 480px) {
-    .hero h1 {
-        font-size: 2.2rem;
-    }
+.flow-content {
+    flex: 1;
+}
 
-    .hero p {
-        font-size: 0.95rem;
-    }
+.step-badge {
+    color: var(--primary);
+    font-weight: 800;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    display: block;
+}
+
+.flow-content h3 {
+    font-size: 3.2rem;
+    margin-bottom: 24px;
+}
+
+.flow-content p {
+    font-size: 1.15rem;
+    color: var(--text-muted);
+    margin-bottom: 30px;
+}
+
+.flow-image {
+    flex: 1.4;
+    border-radius: 40px;
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    overflow: hidden;
+}
+
+.flow-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.flow-image:hover img {
+    transform: scale(1.02);
 }
 
