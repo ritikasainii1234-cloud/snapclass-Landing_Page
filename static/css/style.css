@@ -18,24 +18,27 @@
     box-sizing: border-box;
 }
 
+html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
 body {
     background-color: var(--bg-main);
     color: var(--text-dark);
     font-family: 'Outfit', sans-serif;
     line-height: 1.6;
-    overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
     font-family: 'Climate Crisis', sans-serif;
     line-height: 1.1;
     word-wrap: break-word;
 }
 
-/* Navbar */
+/* =====================
+   NAVBAR
+   ===================== */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -100,7 +103,9 @@ h4 {
     background-color: #f0f0f0;
 }
 
-/* Hero Section */
+/* =====================
+   HERO
+   ===================== */
 .hero {
     min-height: 90vh;
     display: flex;
@@ -110,6 +115,7 @@ h4 {
     text-align: center;
     padding: 120px 40px;
     background-color: #f0f4ff;
+    position: relative;
 }
 
 .badge {
@@ -176,7 +182,7 @@ h4 {
     font-weight: 600;
 }
 
-/* Floating Cards Simplified */
+/* Floating Cards */
 .floating-card {
     position: absolute;
     width: 320px;
@@ -210,27 +216,9 @@ h4 {
     bottom: 15%;
 }
 
-
-/* Integrated Logos */
-.integrated {
-    margin-top: 40px;
-    text-align: center;
-}
-
-.integrated p {
-    font-size: 0.9rem;
-    color: var(--text-muted);
-    margin-bottom: 20px;
-}
-
-.logo-strip {
-    display: flex;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-}
-
-/* Features Section */
+/* =====================
+   FEATURES
+   ===================== */
 .features {
     padding: 120px 80px;
     background-color: white;
@@ -281,7 +269,9 @@ h4 {
     line-height: 1.6;
 }
 
-/* Teacher Flow Section */
+/* =====================
+   TEACHER / STUDENT FLOW
+   ===================== */
 .teacher-flow {
     padding: 120px 80px;
 }
@@ -342,7 +332,9 @@ h4 {
     transform: scale(1.02);
 }
 
-/* Tech Stack */
+/* =====================
+   TECH STACK
+   ===================== */
 .tech-stack {
     padding: 80px 40px;
     background-color: #7c4dff;
@@ -392,6 +384,11 @@ h4 {
     align-items: center;
     justify-content: center;
     font-size: 1.8rem;
+    flex-shrink: 0;
+}
+
+.tech-info {
+    flex: 1;
 }
 
 .tech-card h4 {
@@ -419,7 +416,9 @@ h4 {
     margin-top: 10px;
 }
 
-/* Footer Section */
+/* =====================
+   PURPLE CTA SECTION
+   ===================== */
 .purple-section {
     background-color: var(--primary);
     color: white;
@@ -452,7 +451,9 @@ h4 {
     display: inline-block;
 }
 
-/* Main Footer */
+/* =====================
+   FOOTER
+   ===================== */
 .main-footer {
     padding: 100px 80px 40px;
     background-color: #000000;
@@ -517,8 +518,9 @@ h4 {
     font-weight: 500;
 }
 
-/* Mobile Responsiveness Improvements */
-
+/* =====================
+   RESPONSIVE — 1200px
+   ===================== */
 @media (max-width: 1200px) {
     .navbar {
         padding: 12px 40px;
@@ -533,20 +535,22 @@ h4 {
     }
 
     .features,
-    .teacher-flow,
+    .teacher-flow {
+        padding: 80px 40px;
+    }
+
     .tech-stack,
     .purple-section {
         padding: 80px 40px;
     }
 }
 
+/* =====================
+   RESPONSIVE — 1024px
+   ===================== */
 @media (max-width: 1024px) {
     .hero h1 {
         font-size: 3.5rem;
-    }
-
-    .tech-grid {
-        grid-template-columns: 1fr;
     }
 
     .flow-step {
@@ -559,7 +563,7 @@ h4 {
     }
 
     .tech-stack {
-        padding: 50px 20px;
+        padding: 50px 24px;
         border-radius: 40px;
         margin: 20px;
     }
@@ -574,25 +578,37 @@ h4 {
     }
 }
 
+/* =====================
+   RESPONSIVE — 768px
+   ===================== */
 @media (max-width: 768px) {
-    .navbar .logo-text {
-        display: none;
-    }
 
+    /* Navbar */
     .navbar {
         padding: 10px 20px;
+    }
+
+    .navbar .logo-text {
+        display: none;
     }
 
     .nav-links {
         display: none;
     }
 
+    .btn-pill {
+        padding: 10px 18px;
+        font-size: 0.85rem;
+    }
+
+    /* Hero */
     .hero {
-        padding: 60px 20px;
+        min-height: auto;
+        padding: 80px 20px 60px;
     }
 
     .hero h1 {
-        font-size: 2.8rem;
+        font-size: clamp(2rem, 8vw, 2.8rem);
     }
 
     .hero p {
@@ -602,6 +618,7 @@ h4 {
 
     .hero-actions {
         flex-direction: column;
+        align-items: stretch;
         gap: 16px;
     }
 
@@ -609,15 +626,20 @@ h4 {
         padding: 16px 32px;
         width: 100%;
         justify-content: center;
+        font-size: 1rem;
     }
 
-    .features,
-    .teacher-flow {
-        padding: 80px 20px;
+    .link-action {
+        text-align: center;
+    }
+
+    /* Features */
+    .features {
+        padding: 60px 20px;
     }
 
     .features h2 {
-        font-size: 2.4rem;
+        font-size: clamp(1.8rem, 7vw, 2.4rem);
         margin-bottom: 40px;
     }
 
@@ -627,24 +649,40 @@ h4 {
     }
 
     .feature-card {
-        padding: 30px 20px;
-        border-radius: 30px;
+        padding: 36px 24px;
+        border-radius: 28px;
     }
 
-    .flow-step {
+    /* Flow Steps */
+    .teacher-flow {
+        padding: 60px 20px;
+    }
+
+    .teacher-flow h2 {
+        font-size: clamp(1.8rem, 7vw, 2.4rem) !important;
+        margin-bottom: 48px !important;
+    }
+
+    .flow-step,
+    .flow-step:nth-child(even) {
         flex-direction: column !important;
-        gap: 20px;
+        gap: 24px;
         margin-bottom: 60px;
     }
 
+    .flow-content,
     .flow-image {
-        width: 100%;
-        flex: none;
-        border-radius: 20px;
+        width: 100% !important;
+        flex: none !important;
+        max-width: 100% !important;
+    }
+
+    .flow-image {
+        border-radius: 24px;
     }
 
     .flow-content h3 {
-        font-size: 1.8rem;
+        font-size: clamp(1.5rem, 6vw, 1.8rem);
         margin-bottom: 12px;
     }
 
@@ -653,73 +691,115 @@ h4 {
         margin-bottom: 20px;
     }
 
+    /* Tech Stack */
     .tech-stack {
-        padding: 60px 20px;
-        margin: 20px;
-        border-radius: 40px;
+        padding: 48px 20px;
+        margin: 16px;
+        border-radius: 32px;
     }
 
     .tech-stack h2 {
-        font-size: 2.4rem;
+        font-size: clamp(1.8rem, 7vw, 2.2rem);
+    }
+
+    .tech-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+        margin-top: 24px;
     }
 
     .tech-card {
-        padding: 20px;
-        flex-direction: column;
-        text-align: center;
-        gap: 15px;
-    }
-
-    .t-icon {
-        margin: 0 auto;
+        flex-direction: row;
+        align-items: flex-start;
+        text-align: left;
+        padding: 20px 16px;
+        border-radius: 20px;
+        gap: 16px;
     }
 
     .tech-tag {
         position: relative;
         top: 0;
         right: 0;
-        margin-top: 10px;
+        margin-top: 8px;
         display: inline-block;
     }
 
+    /* Purple CTA */
     .purple-section {
-        padding: 60px 20px;
-        margin: 20px;
-        border-radius: 40px;
+        padding: 60px 24px;
+        margin: 16px;
+        border-radius: 36px;
     }
 
     .purple-section h2 {
-        font-size: 2rem;
+        font-size: clamp(1.6rem, 6vw, 2rem);
+    }
+
+    .purple-section p {
+        font-size: 1rem;
     }
 
     .btn-white {
         padding: 16px 32px;
         width: 100%;
+        display: block;
     }
 
+    /* Footer */
     .main-footer {
         padding: 60px 20px 30px;
     }
 
     .main-footer .footer-grid {
         grid-template-columns: 1fr;
-        gap: 40px;
+        gap: 36px;
         text-align: center;
         margin-bottom: 40px;
     }
 
     .footer-brand p {
         max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .footer-brand .logo {
+        justify-content: center;
     }
 }
 
+/* =====================
+   RESPONSIVE — 480px
+   ===================== */
 @media (max-width: 480px) {
     .hero h1 {
-        font-size: 2.2rem;
+        font-size: clamp(1.7rem, 9vw, 2.2rem);
     }
 
     .hero p {
         font-size: 0.95rem;
     }
-}
 
+    .feature-card {
+        padding: 28px 20px;
+    }
+
+    .flow-content h3 {
+        font-size: 1.4rem;
+    }
+
+    .tech-stack {
+        margin: 12px;
+        padding: 40px 16px;
+    }
+
+    .purple-section {
+        margin: 12px;
+        padding: 48px 16px;
+    }
+
+    .btn-cta {
+        font-size: 0.95rem;
+        padding: 14px 24px;
+    }
+}
