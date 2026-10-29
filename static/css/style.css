@@ -787,3 +787,14 @@ h4 {
     .hero { padding: 70px 20px; }
     .hero h1 { font-size: clamp(2rem, 8vw, 2.8rem); }
 }
+/* Final Hero Layout Adjustment */
+
+.hero h1 {
+    font-size: clamp(2.5rem, 4vw, 4rem);
+    line-height: 1.15;
+}
+
+.card-left,
+.card-right {
+    top: 42%;
+}
